@@ -6,7 +6,7 @@
   <title>Vlad Baesu — Freelance DevOps Engineer</title>
   <meta name="description" content="Freelance DevOps Engineer with 10+ years of experience in cloud infrastructure (AWS, Azure, GCP, Cloudflare, Hetzner), Terraform, Kubernetes, CI/CD, security and AI-assisted development. Based in Cluj-Napoca, working remotely.">
   <meta name="author" content="Vlad Baesu">
-  <meta name="theme-color" content="#f4f0e8">
+  <meta name="theme-color" content="#3c3836">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Vlad Baesu — Freelance DevOps Engineer">
@@ -16,336 +16,174 @@
   <link rel="canonical" href="https://vladbaesu.com/">
   <meta name="twitter:card" content="summary">
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c1b19'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-weight='700' font-size='30' fill='%23f4f0e8'%3EVB%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23282828'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-weight='700' font-size='30' fill='%23fabd2f'%3EVB%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="nav" id="top">
-    <div class="container nav__inner">
-      <a class="nav__logo" href="#top" aria-label="Vlad Baesu, home"><span class="accent">~/</span>vlad-baesu</a>
-      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav__menu" id="nav-menu" aria-label="Main">
-        <a href="#services">Services</a>
-        <a href="#ai">AI</a>
-        <a href="#experience">Experience</a>
-        <a href="#stack">Stack</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn--small btn--primary" href="mailto:contact@vladbaesu.com">Hire me</a>
+  <header class="tmux">
+    <div class="wrap">
+      <span class="tmux__session">[vlad]</span>
+      <nav class="tmux__wins" aria-label="Main">
+        <a class="active" href="#top">0:whoami*</a>
+        <a href="#services">1:services</a>
+        <a href="#ai">2:ai</a>
+        <a href="#experience">3:experience</a>
+        <a href="#stack">4:stack</a>
+        <a href="#contact">5:contact</a>
       </nav>
+      <div class="tmux__right">
+        <span class="clock" id="clock">cluj · 00:00</span>
+        <a class="hire" href="mailto:contact@vladbaesu.com"><span style="color:inherit">hire me ↵</span></a>
+      </div>
     </div>
   </header>
 
   <main id="main">
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero__inner">
-        <div class="hero__text">
-          <p class="terminal" aria-label="whoami: Vlad Baesu, DevOps Engineer">
-            <span class="terminal__prompt">$</span>
-            <span class="terminal__cmd" data-type="whoami">whoami</span><span class="terminal__cursor" aria-hidden="true"></span>
-          </p>
-          <h1>Vlad Baesu<br><span class="gradient">Freelance DevOps Engineer</span></h1>
-          <p class="hero__lead">
-            I build, secure and run cloud infrastructure, CI/CD pipelines and Kubernetes platforms
-            for teams that want to ship faster and sleep better. 10+ years of DevOps, now working
-            directly with clients as a freelancer.
-          </p>
-          <div class="hero__cta">
-            <a class="btn btn--primary" href="mailto:contact@vladbaesu.com">Get in touch</a>
-            <a class="btn btn--ghost" href="#experience">View experience</a>
-          </div>
-          <p class="hero__meta">
-            <span class="status-dot" aria-hidden="true"></span>
-            Available for projects · Cluj-Napoca, Romania · Remote
-          </p>
-        </div>
-        <div class="hero__photo">
-          <div class="photo-ring">
-            <img src="assets/photo.jpg" alt="Portrait of Vlad Baesu" width="413" height="413">
+    <section id="top">
+      <div class="wrap">
+        <p class="ps1"><span class="u">vlad@baesu</span>:<span class="p">~</span>$ <span class="cmd">neofetch</span></p>
+        <div class="neofetch">
+          <div class="neofetch__logo"><img src="assets/photo.jpg" width="413" height="413" alt="Portrait of Vlad Baesu"></div>
+          <div class="nf">
+            <div class="nf-title"><span class="u">vlad</span>@<span class="h">baesu</span></div>
+            <div class="nf-rule">----------</div>
+            <dl>
+              <dt>Role</dt><dd>Freelance DevOps Engineer</dd>
+              <dt>Uptime</dt><dd>14+ years in software, 10+ in DevOps</dd>
+              <dt>Freelance</dt><dd>since Aug 2021</dd>
+              <dt>Location</dt><dd>Cluj-Napoca, RO (remote)</dd>
+              <dt>Clouds</dt><dd>AWS, Azure, GCP, Cloudflare, Hetzner</dd>
+              <dt>IaC</dt><dd>Terraform, OpenTofu, Ansible</dd>
+              <dt>Orchestration</dt><dd>Kubernetes, Docker, Helm</dd>
+              <dt>Cert</dt><dd>RHCSA</dd>
+              <dt>Status</dt><dd style="color:var(--green)">● available for projects</dd>
+            </dl>
+            <div class="nf-colors" aria-hidden="true">
+              <i style="background:#282828"></i><i style="background:#cc241d"></i><i style="background:#98971a"></i><i style="background:#d79921"></i><i style="background:#458588"></i><i style="background:#b16286"></i><i style="background:#689d6a"></i><i style="background:#a89984"></i>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="stats" aria-label="At a glance">
-      <div class="container stats__grid">
-        <div class="stat"><span class="stat__num">14+</span><span class="stat__label">years in software</span></div>
-        <div class="stat"><span class="stat__num">10+</span><span class="stat__label">years in DevOps</span></div>
-        <div class="stat"><span class="stat__num">5</span><span class="stat__label">years freelancing</span></div>
-        <div class="stat"><span class="stat__num">5</span><span class="stat__label">cloud providers</span></div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section class="section" id="services">
-      <div class="container">
-        <p class="eyebrow">// services</p>
-        <h2>What I can do for you</h2>
-        <p class="section__lead">From a first Terraform module to a production Kubernetes platform, I cover the path from commit to running service.</p>
-        <div class="cards">
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 8a4.5 4.5 0 0 1 0 9H7Z"/></svg>
-            </div>
-            <h3>Cloud infrastructure</h3>
-            <p>Design, build and migrate infrastructure on AWS, Azure and Google Cloud, plus Cloudflare at the edge and Hetzner for cost-efficient compute: networking, managed databases, IAM and cost-aware architecture.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
-            </div>
-            <h3>Infrastructure as Code</h3>
-            <p>Reproducible environments with Terraform/OpenTofu and Terragrunt, or cloud-native CloudFormation, CDK and Bicep. Ansible for configuration and Packer for machine images: reusable modules, remote state and drift-free changes reviewed like code.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="12" r="2.5"/><path d="M6 8.5v7M8.5 6H12a3 3 0 0 1 3 3v.5M8.5 18H12a3 3 0 0 0 3-3v-.5"/></svg>
-            </div>
-            <h3>CI/CD pipelines</h3>
-            <p>Fast, reliable build and release pipelines with Jenkins, Azure DevOps and GitHub/GitLab CI: automated tests, artifacts and safe deployments.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 2.5 20.5 7v10L12 21.5 3.5 17V7L12 2.5Z"/><path d="M12 12 20.5 7M12 12 3.5 7M12 12v9.5"/></svg>
-            </div>
-            <h3>Kubernetes &amp; containers</h3>
-            <p>Containerise applications with Docker and run them on Kubernetes: cluster setup, Helm, autoscaling and a microservices-friendly platform.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M3 20h18M5 16l4-5 4 3 6-8"/></svg>
-            </div>
-            <h3>Observability</h3>
-            <p>Know what your systems are doing: metrics, logs, dashboards and alerting with Prometheus, Grafana and Loki, or Datadog and New Relic, so issues surface before your users notice.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M12 15h5"/></svg>
-            </div>
-            <h3>Automation &amp; systems</h3>
-            <p>Python and Go tooling and scripting to remove toil, plus solid Linux (RHEL, Ubuntu, Debian) and Windows administration, backed by a Red Hat (RHCSA) certification.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.4 7.5 9.5 4.4-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>
-            </div>
-            <h3>Security</h3>
-            <p>Hardening cloud accounts, servers and pipelines: least-privilege IAM, secrets management, network and edge protection, vulnerability scanning in CI and security reviews of existing setups.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M5 16V11l2-5h10l2 5v5"/><path d="M3 16h18v3H3zM5 11h14"/><circle cx="7.5" cy="13.5" r=".8"/><circle cx="16.5" cy="13.5" r=".8"/></svg>
-            </div>
-            <h3>Android Automotive</h3>
-            <p>DevOps for in-vehicle infotainment (HMI) projects on Android Automotive OS: CI pipelines for Android apps, release orchestration across build systems, build and manifest verification, and reliable release-candidate delivery.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4 2.5-2.5Z"/><path d="M19 2v3M17.5 3.5h3"/></svg>
-            </div>
-            <h3>AI-assisted internal tools</h3>
-            <p>Custom internal tools built quickly with AI-assisted development: dashboards, admin panels, CLIs, release and ops tooling, and integrations your team actually needs, delivered in days instead of months.</p>
-          </article>
+        <h1 class="pitch">I build, secure and run <em>cloud infrastructure</em>, CI/CD pipelines and Kubernetes platforms.</h1>
+        <p class="lead">For teams that want to ship faster and sleep better. 10+ years of DevOps, now working directly with clients as a freelancer.</p>
+        <div class="actions">
+          <a class="btn btn--hot" href="mailto:contact@vladbaesu.com">$ mail vlad</a>
+          <a class="btn" href="#experience">git log --experience</a>
         </div>
       </div>
     </section>
 
-    <!-- AI -->
-    <section class="section section--alt" id="ai">
-      <div class="container">
-        <p class="eyebrow">// ai</p>
-        <h2>Working with AI</h2>
-        <p class="section__lead">AI is part of how I work and part of what I build: I use it to move faster day to day, and I run AI models on real infrastructure, not just in demos.</p>
-        <div class="cards">
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg>
-            </div>
-            <h3>AI-assisted engineering</h3>
-            <p>I work with AI coding agents like Claude Code using spec-driven development: agree on a written spec and plan first, then let the agent implement, with every change reviewed and tested by a human.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
-            </div>
-            <h3>Running AI workloads</h3>
-            <p>Getting models out of notebooks and into service: packaging inference in containers, GPU and Apple Silicon acceleration, handling multi-GB model weights, streaming responses and keeping costs in check.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M4 6h10M4 12h7M4 18h10"/><path d="m16 10 4 2-4 2"/></svg>
-            </div>
-            <h3>Automation with LLMs</h3>
-            <p>Turning repetitive operations work (runbooks, triage, reports, glue scripts) into AI-assisted tools that save your team hours every week.</p>
-          </article>
-        </div>
-        <div class="ai-tools reveal">
-          <span class="ai-tools__label">toolbox</span>
-          <ul class="tags tags--lg">
-            <li>Claude Code</li><li>Spec-driven development</li><li>LLM APIs</li><li>PyTorch</li><li>Hugging Face</li><li>ONNX</li><li>CUDA</li><li>Apple Silicon (MPS)</li><li>Text-to-speech</li><li>ffmpeg</li>
-          </ul>
+    <section id="services">
+      <div class="wrap">
+        <h2 class="ps1"><span class="u">vlad@baesu</span>:<span class="p">~</span>$ <span class="cmd">man services</span></h2>
+        <div class="man-head"><span>SERVICES(1)</span><span>Vlad Baesu Manual</span><span>SERVICES(1)</span></div>
+        <p class="man-sec">DESCRIPTION</p>
+        <p class="lead" style="margin-bottom:22px">From a first Terraform module to a production Kubernetes platform, I cover the path from commit to running service.</p>
+        <div class="svc">
+          <article><h3>cloud-infrastructure</h3><p>Design, build and migrate infrastructure on AWS, Azure and Google Cloud, plus Cloudflare at the edge and Hetzner for cost-efficient compute.</p></article>
+          <article><h3>infrastructure-as-code</h3><p>Terraform/OpenTofu and Terragrunt, or CloudFormation, CDK and Bicep. Ansible for configuration, Packer for images. Drift-free changes reviewed like code.</p></article>
+          <article><h3>ci-cd-pipelines</h3><p>Fast, reliable pipelines with Jenkins, Azure DevOps and GitHub/GitLab CI: automated tests, artifacts and safe deployments.</p></article>
+          <article><h3>kubernetes</h3><p>Containerise with Docker and run on Kubernetes: cluster setup, Helm, autoscaling and a microservices-friendly platform.</p></article>
+          <article><h3>observability</h3><p>Metrics, logs, dashboards and alerting with Prometheus, Grafana and Loki, or Datadog and New Relic.</p></article>
+          <article><h3>automation</h3><p>Python and Go tooling to remove toil, plus Linux (RHEL, Ubuntu, Debian) and Windows administration. RHCSA certified.</p></article>
+          <article><h3>security</h3><p>Least-privilege IAM, secrets management, network and edge protection, vulnerability scanning in CI and security reviews.</p></article>
+          <article><h3>android-automotive</h3><p>CI and release orchestration for in-vehicle infotainment (HMI) apps on Android Automotive OS: build and manifest verification, release candidates.</p></article>
+          <article><h3>internal-tools</h3><p>Custom internal tools built fast with AI-assisted development: dashboards, admin panels, CLIs and ops tooling.</p></article>
         </div>
       </div>
     </section>
 
-    <!-- Experience -->
-    <section class="section" id="experience">
-      <div class="container">
-        <p class="eyebrow">// experience</p>
-        <h2>Where I've worked</h2>
-        <ol class="timeline">
-          <li class="timeline__item reveal">
-            <div class="timeline__head">
-              <h3>DevOps Engineer <span class="muted">· Freelance</span></h3>
-              <span class="timeline__date">Aug 2021 — Present</span>
+    <section id="ai">
+      <div class="wrap">
+        <h2 class="ps1"><span class="u">vlad@baesu</span>:<span class="p">~</span>$ <span class="cmd">cat ~/ai/README</span></h2>
+        <p class="lead" style="margin-bottom:26px">AI is part of how I work and part of what I build. <span class="comment"># real infrastructure, not just demos</span></p>
+        <div class="ai">
+          <div><h3>AI-assisted engineering</h3><p>Claude Code with spec-driven development: agree on a written spec and plan first, then let the agent implement, with every change reviewed and tested by a human.</p></div>
+          <div><h3>Running AI workloads</h3><p>Containerised inference, GPU and Apple Silicon acceleration, multi-GB model weights, streaming responses and cost control.</p></div>
+          <div><h3>Automation with LLMs</h3><p>Runbooks, triage, reports and glue scripts turned into AI-assisted tools that save hours every week.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <h2 class="ps1"><span class="u">vlad@baesu</span>:<span class="p">~</span>$ <span class="cmd">git log --graph career</span></h2>
+        <ol class="gitlog">
+          <li><span class="graph">*</span>
+            <div class="commit">
+              <div class="commit__line"><span class="hash">a3f9e21</span> <span class="refs">(<b>HEAD -&gt; freelance</b>)</span> <span class="title">DevOps Engineer · Freelance</span></div>
+              <div class="commit__meta">Date: Aug 2021 — present · remote, Cluj-Napoca</div>
+              <p class="commit__body">Independent DevOps consulting: multi-cloud infrastructure, Terraform-based IaC, CI/CD, Python automation and build &amp; release pipelines for Android Automotive infotainment projects.</p>
+              <div class="tags">aws azure gcp cloudflare hetzner terraform ci-cd security android-automotive</div>
             </div>
-            <p class="timeline__place">Remote · Cluj-Napoca, Romania</p>
-            <p>Independent DevOps consulting for client teams: cloud infrastructure on AWS, GCP and Azure, Terraform-based infrastructure as code, CI/CD pipelines, Python automation and build &amp; release pipelines for Android Automotive infotainment projects.</p>
-            <ul class="tags">
-              <li>AWS</li><li>Azure</li><li>GCP</li><li>Cloudflare</li><li>Hetzner</li><li>Azure DevOps</li><li>Terraform</li><li>CI/CD</li><li>IaC</li><li>Python</li><li>Security</li><li>Android Automotive</li>
-            </ul>
           </li>
-
-          <li class="timeline__item reveal">
-            <div class="timeline__head">
-              <h3>Yonder</h3>
-              <span class="timeline__date">May 2012 — Aug 2023 · 11 yrs</span>
+          <li><span class="graph">*</span>
+            <div class="commit">
+              <div class="commit__line"><span class="hash">7c01b4d</span> <span class="refs">(tag: yonder)</span> <span class="title">Yonder · 11 yrs</span></div>
+              <div class="commit__meta">Date: May 2012 — Aug 2023 · Iași &amp; Cluj</div>
+              <p class="commit__body">Grew from junior developer to senior DevOps engineer on microservices-based products.</p>
+              <ul class="sub">
+                <li>Senior DevOps Engineer <span class="d">2018—2023</span> · kubernetes ci terraform grafana jenkins</li>
+                <li>DevOps Engineer <span class="d">2014—2018</span> · microservices docker</li>
+                <li>Web Developer <span class="d">2013—2014</span></li>
+                <li>Junior Developer <span class="d">2012—2013</span></li>
+              </ul>
             </div>
-            <p class="timeline__place">Iași &amp; Cluj, Romania</p>
-            <p>Grew from junior developer to senior DevOps engineer over 11 years, working on microservices-based products and the platforms behind them.</p>
-            <ol class="roles">
-              <li>
-                <div class="roles__head"><strong>Senior DevOps Engineer</strong><span>Aug 2018 — Aug 2023</span></div>
-                <ul class="tags">
-                  <li>Kubernetes</li><li>CI</li><li>Terraform</li><li>Grafana</li><li>Jenkins</li><li>Microservices</li>
-                </ul>
-              </li>
-              <li>
-                <div class="roles__head"><strong>DevOps Engineer</strong><span>Apr 2014 — Jul 2018</span></div>
-                <ul class="tags"><li>Microservices</li><li>Docker</li></ul>
-              </li>
-              <li>
-                <div class="roles__head"><strong>Web Developer</strong><span>Feb 2013 — Mar 2014</span></div>
-              </li>
-              <li>
-                <div class="roles__head"><strong>Junior Developer</strong><span>May 2012 — Feb 2013</span></div>
-              </li>
-            </ol>
           </li>
-
-          <li class="timeline__item reveal">
-            <div class="timeline__head">
-              <h3>Security Engineer <span class="muted">· Betfair Romania Development</span></h3>
-              <span class="timeline__date">Jul 2019 — Sep 2019</span>
+          <li><span class="graph">*</span>
+            <div class="commit">
+              <div class="commit__line"><span class="hash">e4d8a02</span> <span class="title">Security Engineer · Betfair Romania Development</span></div>
+              <div class="commit__meta">Date: Jul 2019 — Sep 2019 · Cluj</div>
             </div>
-            <p class="timeline__place">Cluj, Romania</p>
-            <ul class="tags"><li>Security</li><li>Microservices</li></ul>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- Stack -->
-    <section class="section section--alt" id="stack">
-      <div class="container">
-        <p class="eyebrow">// stack</p>
-        <h2>Tools I work with</h2>
-        <div class="stack">
-          <div class="stack__group reveal">
-            <h3>Cloud</h3>
-            <ul class="tags tags--lg"><li>AWS</li><li>Azure</li><li>Google Cloud</li><li>Cloudflare</li><li>Hetzner</li></ul>
-          </div>
-          <div class="stack__group reveal">
-            <h3>Infrastructure as Code</h3>
-            <ul class="tags tags--lg"><li>Terraform</li><li>OpenTofu</li><li>Terragrunt</li><li>Ansible</li><li>CloudFormation</li><li>AWS CDK</li><li>Bicep</li><li>Packer</li></ul>
-          </div>
-          <div class="stack__group reveal">
-            <h3>CI/CD</h3>
-            <ul class="tags tags--lg"><li>Jenkins</li><li>Azure DevOps</li><li>GitHub Actions</li><li>GitLab CI</li></ul>
-          </div>
-          <div class="stack__group reveal">
-            <h3>Containers</h3>
-            <ul class="tags tags--lg"><li>Kubernetes</li><li>Docker</li><li>Helm</li><li>Kustomize</li><li>Microservices</li></ul>
-          </div>
-          <div class="stack__group reveal">
-            <h3>Observability</h3>
-            <ul class="tags tags--lg"><li>Grafana</li><li>Prometheus</li><li>Loki</li><li>Datadog</li><li>New Relic</li></ul>
-          </div>
-          <div class="stack__group reveal">
-            <h3>Languages &amp; OS</h3>
-            <ul class="tags tags--lg"><li>Python</li><li>Go</li><li>TypeScript / JavaScript</li><li>C#</li><li>C++</li><li>PHP</li><li>Bash</li><li>Linux (RHEL, Ubuntu, Debian)</li><li>Windows</li></ul>
-          </div>
-          <div class="stack__group reveal">
-            <h3>Security</h3>
-            <ul class="tags tags--lg"><li>IAM &amp; least privilege</li><li>Secrets management</li><li>Vulnerability scanning</li><li>WAF &amp; edge security</li><li>Hardening</li></ul>
-          </div>
-          <div class="stack__group reveal">
-            <h3>AI / ML</h3>
-            <ul class="tags tags--lg"><li>Claude Code</li><li>Spec-driven development</li><li>LLM APIs</li><li>PyTorch</li><li>Hugging Face</li><li>Model serving</li></ul>
-          </div>
+    <section id="stack">
+      <div class="wrap">
+        <h2 class="ps1"><span class="u">vlad@baesu</span>:<span class="p">~</span>$ <span class="cmd">apt list --installed</span></h2>
+        <div class="apt">
+          <div><h3>cloud</h3><ul><li>aws <span class="ok">[installed]</span></li><li>azure <span class="ok">[installed]</span></li><li>google-cloud <span class="ok">[installed]</span></li><li>cloudflare <span class="ok">[installed]</span></li><li>hetzner <span class="ok">[installed]</span></li></ul></div>
+          <div><h3>infrastructure-as-code</h3><ul><li>terraform, opentofu, terragrunt</li><li>ansible, packer</li><li>cloudformation, aws-cdk, bicep</li></ul></div>
+          <div><h3>ci-cd</h3><ul><li>jenkins, azure-devops</li><li>github-actions, gitlab-ci</li></ul></div>
+          <div><h3>containers</h3><ul><li>kubernetes, docker, helm, kustomize</li><li>microservices</li></ul></div>
+          <div><h3>observability</h3><ul><li>prometheus, grafana, loki</li><li>datadog, new-relic</li></ul></div>
+          <div><h3>security</h3><ul><li>iam, secrets-management, vuln-scanning</li><li>waf, hardening</li></ul></div>
+          <div><h3>languages</h3><ul><li>python, go, typescript, javascript</li><li>c#, c++, php, bash</li></ul></div>
+          <div><h3>os</h3><ul><li>rhel, ubuntu, debian <span class="comment">(RHCSA)</span></li><li>windows</li></ul></div>
+          <div><h3>ai-ml</h3><ul><li>claude-code, spec-driven-development</li><li>llm-apis, pytorch, hugging-face, model-serving</li></ul></div>
         </div>
       </div>
     </section>
 
-    <!-- Certifications & education -->
-    <section class="section" id="credentials">
-      <div class="container">
-        <p class="eyebrow">// credentials</p>
-        <h2>Certifications &amp; education</h2>
-        <div class="creds">
-          <article class="cred reveal">
-            <span class="cred__kind">Certification</span>
-            <h3>Red Hat Certified System Administrator (RHCSA)</h3>
-            <p class="muted">Red Hat · 2016</p>
-          </article>
-          <article class="cred reveal">
-            <span class="cred__kind">Education</span>
-            <h3>Alexandru Ioan Cuza University</h3>
-            <p class="muted">Faculty of Computer Science · Iași · 2011 — 2014</p>
-          </article>
-        </div>
+    <section id="credentials">
+      <div class="wrap">
+        <h2 class="ps1"><span class="u">vlad@baesu</span>:<span class="p">~</span>$ <span class="cmd">cat /etc/credentials</span></h2>
+        <p class="cat"><b>cert</b>  Red Hat Certified System Administrator (RHCSA) · 2016<br>
+        <b>edu</b>   Alexandru Ioan Cuza University, Faculty of Computer Science · Iași · 2011—2014</p>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="section section--alt" id="contact">
-      <div class="container">
-        <div class="contact reveal">
-          <p class="eyebrow">// contact</p>
-          <h2>Let's work together</h2>
-          <p class="section__lead">Need help with your cloud, pipelines or Kubernetes? Tell me about your project and I'll get back to you.</p>
-          <a class="btn btn--primary btn--lg" href="mailto:contact@vladbaesu.com">contact@vladbaesu.com</a>
-          <div class="contact__links">
-            <a href="https://www.linkedin.com/in/vlad-baesu-4813822a/" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21.6 8.65 22 11.2 22 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21h-4V9Z"/></svg>
-              LinkedIn
-            </a>
-            <a href="https://github.com/vladgb" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
-              GitHub
-            </a>
-          </div>
+    <section id="contact" style="border-bottom:0">
+      <div class="wrap">
+        <h2 class="ps1"><span class="u">vlad@baesu</span>:<span class="p">~</span>$ <span class="cmd">./contact.sh</span></h2>
+        <div class="contact-box">
+          <p class="comment" style="margin-bottom:10px"># need help with cloud, pipelines or kubernetes? tell me about your project.</p>
+          <p><a class="big" href="mailto:contact@vladbaesu.com">contact@vladbaesu.com</a></p>
+          <p class="contact-links" style="margin:0"><a href="https://www.linkedin.com/in/vlad-baesu-4813822a/" target="_blank" rel="noopener">linkedin</a><a href="https://github.com/vladgb" target="_blank" rel="noopener">github</a></p>
         </div>
+        <p class="ps1" style="margin-top:28px"><span class="u">vlad@baesu</span>:<span class="p">~</span>$ <span class="cursor"></span></p>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p>© <span id="year">2026</span> Vlad Baesu</p>
-      <p class="muted mono">static site · deployed with GitHub Actions</p>
-    </div>
-  </footer>
-
+  <footer><div class="wrap">© <span id="year">2026</span> Vlad Baesu · static site, deployed with GitHub Actions · [process completed]</div></footer>
   <script src="main.js" defer></script>
 </body>
 </html>
