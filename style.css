@@ -245,3 +245,4 @@ p { margin: 0 0 1em; }
   .btn--lg { font-size: .95rem; padding: 14px 18px; }
 }
 .stack__group--wide { grid-column: 1 / -1; }
+.card--wide { grid-column: 1 / -1; }
