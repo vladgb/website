@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vlad Baesu — Freelance DevOps Engineer</title>
+  <meta name="description" content="Freelance DevOps Engineer with 10+ years of experience in cloud infrastructure (AWS, GCP, Azure), Terraform, Kubernetes and CI/CD. Based in Cluj-Napoca, working remotely.">
+  <meta name="author" content="Vlad Baesu">
+  <meta name="theme-color" content="#0b1120">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vlad Baesu — Freelance DevOps Engineer">
+  <meta property="og:description" content="Cloud infrastructure, CI/CD and Kubernetes for teams that want to ship faster.">
+  <meta property="og:image" content="assets/photo.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1120'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-weight='700' font-size='30' fill='%232dd4bf'%3EVB%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="#top" aria-label="Vlad Baesu, home"><span class="accent">~/</span>vlad-baesu</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="nav-menu" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn--small btn--primary" href="mailto:contact@vladbaesu.com">Hire me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="terminal" aria-label="whoami: Vlad Baesu, DevOps Engineer">
+            <span class="terminal__prompt">$</span>
+            <span class="terminal__cmd" data-type="whoami">whoami</span><span class="terminal__cursor" aria-hidden="true"></span>
+          </p>
+          <h1>Vlad Baesu<br><span class="gradient">Freelance DevOps Engineer</span></h1>
+          <p class="hero__lead">
+            I build and run cloud infrastructure, CI/CD pipelines and Kubernetes platforms
+            for teams that want to ship faster and sleep better. 10+ years of DevOps, now working
+            directly with clients as a freelancer.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="mailto:contact@vladbaesu.com">Get in touch</a>
+            <a class="btn btn--ghost" href="#experience">View experience</a>
+          </div>
+          <p class="hero__meta">
+            <span class="status-dot" aria-hidden="true"></span>
+            Available for projects · Cluj-Napoca, Romania · Remote
+          </p>
+        </div>
+        <div class="hero__photo">
+          <div class="photo-ring">
+            <img src="assets/photo.jpg" alt="Portrait of Vlad Baesu" width="413" height="413">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" aria-label="At a glance">
+      <div class="container stats__grid">
+        <div class="stat"><span class="stat__num">13+</span><span class="stat__label">years in software</span></div>
+        <div class="stat"><span class="stat__num">10+</span><span class="stat__label">years in DevOps</span></div>
+        <div class="stat"><span class="stat__num">5</span><span class="stat__label">years freelancing</span></div>
+        <div class="stat"><span class="stat__num">3</span><span class="stat__label">clouds: AWS · GCP · Azure</span></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <p class="eyebrow">// services</p>
+        <h2>What I can do for you</h2>
+        <p class="section__lead">From a first Terraform module to a production Kubernetes platform, I cover the path from commit to running service.</p>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 8a4.5 4.5 0 0 1 0 9H7Z"/></svg>
+            </div>
+            <h3>Cloud infrastructure</h3>
+            <p>Design, build and migrate infrastructure on AWS, Google Cloud and Azure: networking, compute, managed databases, IAM and cost-aware architecture.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+            </div>
+            <h3>Infrastructure as Code</h3>
+            <p>Reproducible environments with Terraform: reusable modules, remote state, environment promotion and drift-free changes reviewed like code.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="12" r="2.5"/><path d="M6 8.5v7M8.5 6H12a3 3 0 0 1 3 3v.5M8.5 18H12a3 3 0 0 0 3-3v-.5"/></svg>
+            </div>
+            <h3>CI/CD pipelines</h3>
+            <p>Fast, reliable build and release pipelines with Jenkins, Azure DevOps and GitHub/GitLab CI: automated tests, artifacts and safe deployments.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2.5 20.5 7v10L12 21.5 3.5 17V7L12 2.5Z"/><path d="M12 12 20.5 7M12 12 3.5 7M12 12v9.5"/></svg>
+            </div>
+            <h3>Kubernetes &amp; containers</h3>
+            <p>Containerise applications with Docker and run them on Kubernetes: cluster setup, Helm, autoscaling and a microservices-friendly platform.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 20h18M5 16l4-5 4 3 6-8"/></svg>
+            </div>
+            <h3>Observability</h3>
+            <p>Know what your systems are doing: metrics, dashboards and alerting with Grafana and friends, so issues surface before your users notice.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M12 15h5"/></svg>
+            </div>
+            <h3>Automation &amp; Linux</h3>
+            <p>Python tooling and scripting to remove toil, plus solid Linux administration, backed by a Red Hat (RHCSA) certification.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <p class="eyebrow">// experience</p>
+        <h2>Where I've worked</h2>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__head">
+              <h3>DevOps Engineer <span class="muted">· Freelance</span></h3>
+              <span class="timeline__date">Aug 2021 — Present</span>
+            </div>
+            <p class="timeline__place">Remote · Cluj-Napoca, Romania</p>
+            <p>Independent DevOps consulting for client teams: cloud infrastructure on AWS, GCP and Azure, Terraform-based infrastructure as code, CI/CD pipelines and Python automation.</p>
+            <ul class="tags">
+              <li>AWS</li><li>GCP</li><li>Azure DevOps</li><li>Terraform</li><li>CI/CD</li><li>IaC</li><li>Python</li>
+            </ul>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__head">
+              <h3>Yonder</h3>
+              <span class="timeline__date">May 2012 — Aug 2023 · 11 yrs</span>
+            </div>
+            <p class="timeline__place">Iași &amp; Cluj, Romania</p>
+            <p>Grew from junior developer to senior DevOps engineer over 11 years, working on microservices-based products and the platforms behind them.</p>
+            <ol class="roles">
+              <li>
+                <div class="roles__head"><strong>Senior DevOps Engineer</strong><span>Aug 2018 — Aug 2023</span></div>
+                <ul class="tags">
+                  <li>Kubernetes</li><li>CI</li><li>Terraform</li><li>Grafana</li><li>Jenkins</li><li>Microservices</li>
+                </ul>
+              </li>
+              <li>
+                <div class="roles__head"><strong>DevOps Engineer</strong><span>Apr 2014 — Jul 2018</span></div>
+                <ul class="tags"><li>Microservices</li><li>Docker</li></ul>
+              </li>
+              <li>
+                <div class="roles__head"><strong>Web Developer</strong><span>Feb 2013 — Mar 2014</span></div>
+              </li>
+              <li>
+                <div class="roles__head"><strong>Junior Developer</strong><span>May 2012 — Feb 2013</span></div>
+              </li>
+            </ol>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__head">
+              <h3>Security Engineer <span class="muted">· Betfair Romania Development</span></h3>
+              <span class="timeline__date">Jul 2019 — Sep 2019</span>
+            </div>
+            <p class="timeline__place">Cluj, Romania</p>
+            <ul class="tags"><li>Security</li><li>Microservices</li></ul>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__head">
+              <h3>Web Developer <span class="muted">· Centrul de Comunicații</span></h3>
+              <span class="timeline__date">Jun 2008 — Jun 2011</span>
+            </div>
+            <p>Where it started: building websites and web applications.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section class="section" id="stack">
+      <div class="container">
+        <p class="eyebrow">// stack</p>
+        <h2>Tools I work with</h2>
+        <div class="stack">
+          <div class="stack__group reveal">
+            <h3>Cloud</h3>
+            <ul class="tags tags--lg"><li>AWS</li><li>Google Cloud</li><li>Azure</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3>Infrastructure as Code</h3>
+            <ul class="tags tags--lg"><li>Terraform</li><li>IaC</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3>CI/CD</h3>
+            <ul class="tags tags--lg"><li>Jenkins</li><li>Azure DevOps</li><li>GitHub Actions</li><li>GitLab CI</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3>Containers</h3>
+            <ul class="tags tags--lg"><li>Kubernetes</li><li>Docker</li><li>Microservices</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3>Observability</h3>
+            <ul class="tags tags--lg"><li>Grafana</li><li>Monitoring &amp; alerting</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3>Languages &amp; OS</h3>
+            <ul class="tags tags--lg"><li>Python</li><li>Bash</li><li>Linux (RHEL)</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & education -->
+    <section class="section section--alt" id="credentials">
+      <div class="container">
+        <p class="eyebrow">// credentials</p>
+        <h2>Certifications &amp; education</h2>
+        <div class="creds">
+          <article class="cred reveal">
+            <span class="cred__kind">Certification</span>
+            <h3>Red Hat Certified System Administrator (RHCSA)</h3>
+            <p class="muted">Red Hat · 2016</p>
+          </article>
+          <article class="cred reveal">
+            <span class="cred__kind">Education</span>
+            <h3>Alexandru Ioan Cuza University</h3>
+            <p class="muted">Faculty of Computer Science · Iași · 2011 — 2014</p>
+          </article>
+          <article class="cred reveal">
+            <span class="cred__kind">Education</span>
+            <h3>Colegiul Național de Informatică</h3>
+            <p class="muted">Piatra Neamț · 2003 — 2011</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact reveal">
+          <p class="eyebrow">// contact</p>
+          <h2>Let's work together</h2>
+          <p class="section__lead">Need help with your cloud, pipelines or Kubernetes? Tell me about your project and I'll get back to you.</p>
+          <a class="btn btn--primary btn--lg" href="mailto:contact@vladbaesu.com">contact@vladbaesu.com</a>
+          <div class="contact__links">
+            <a href="https://www.linkedin.com/in/vlad-baesu-4813822a/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21.6 8.65 22 11.2 22 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21h-4V9Z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/vladgb" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Vlad Baesu</p>
+      <p class="muted mono">static site · deployed with GitHub Actions</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
